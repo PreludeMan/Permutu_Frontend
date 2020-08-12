@@ -1,31 +1,39 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+   <!-- TODO przeniesc requesty do tego plik -> -->
+    <script src="../scripts/requests.js"></script>
 </head>
+
+<script>
+    
+    $("#registerForm").on("submit", function(event) {
+       event.preventDefault();
+       console.log("sdfasdf");
+       // process form
+    });
+
+</script>
+
 <body>
-    <div id="fullscreen_bg" class="fullscreen_bg"/>
+<div id="fullscreen_bg" class="fullscreen_bg"/>
 
 <div class="container">
 
-	<form class="form-signin">
+	<form class="form-signin" id="registerForm">
 		<h1 class="form-signin-heading text-muted">Rejestracja</h1>
-		<input type="text" class="form-control" placeholder="Login" required="" autofocus="">
+		<input type="text" class="form-control" placeholder="Login" required="" autofocus=""> </br></br>
         <input type="password" class="form-control" placeholder="Hasło" required="">
-        <input type="password" class="form-control" placeholder="Powórz hasło" required="">
-        <input type="text" class="form-control" placeholder="Email" required="" autofocus="">
+        <input type="password" class="form-control" placeholder="Powórz hasło" required=""></br></br>
+        <input type="text" class="form-control" placeholder="Email" required="" autofocus=""></br></br></br>
         
 		<button class="btn btn-lg btn-primary btn-block" type="submit">
 			Rejestracja
@@ -36,7 +44,4 @@
 </div>
 </body>
 </html>
-<body>
-    
-</body>
-</html>
+
